@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --len: 6rem;
+}
+
+.game{
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+}
+.status {
+    font-size: 1.3rem;
+    color: rgb(234, 119, 32);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, var(--len));
+    grid-template-rows: repeat(3, var(--len));
+}
+.game-board > button {
+    font-size: 2.5rem;
+
+}
+
+.restart {
+    padding: .5rem 2rem;
+    font-size: 1.2rem;
+    width: calc(var(--len)*3);
+}
